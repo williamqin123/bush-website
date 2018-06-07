@@ -1,0 +1,112 @@
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			pressedcount=0;
+			function switchtab(event) {
+				if (event.target.tagName="H2") {
+					var matcher=document.getElementById(event.target.innerHTML);
+					var alltabs=document.getElementsByClassName("tab");
+					for (x=0; x<alltabs.length; x++) {
+						if (alltabs[x].className=="tab selected") {
+							alltabs[x].className="tab";
+						}
+					}
+					pressedcount++;
+					matcher.style.zIndex=pressedcount;
+					event.target.parentNode.className="tab selected";
+				}
+			}
+			window.addEventListener("click", switchtab);
+		</script>
+		<table class="tabtable">
+			<tr>
+				<td id="tabs">
+					<div class="tab">
+						<h2>First</h2>
+						Grade
+					</div>
+					<div class="tab">
+						<h2>Second</h2>
+						Grade
+					</div>
+					<div class="tab">
+						<h2>Third</h2>
+						Grade
+					</div>
+					<div class="tab">
+						<h2>Fourth</h2>
+						Grade
+					</div>
+					<div class="tab">
+						<h2>Fifth</h2>
+						Grade
+					</div>
+				</td>
+				<td id="content">
+					<div id="First" class="tabcontent">
+						<h2>Ms. Ennis</h2>
+						Math, Social Studies, and Science
+						<h2>Ms. Hime</h2>
+						Reading and Writing
+						<h2>#</h2>
+						#
+						<h2>#</h2>
+						#
+						<h2>#</h2>
+						#
+					</div>
+					<div id="Second" class="tabcontent">
+						<h2>Ms. Strange</h2>
+						All Subjects
+						<h2>#</h2>
+						#
+						<h2>Ms. McMaster</h2>
+						#
+						<h2>Ms. Taylor</h2>
+						#
+						<h2>Mr. Rosales</h2>
+						#
+					</div>
+					<div id="Third" class="tabcontent">
+						<h2>Ms. Dow</h2>
+						Math and Science
+						<h2>Ms. Roe</h2>
+						Reading, Writing, and Social Studies
+						<h2>Ms. McMaster</h2>
+						#
+						<h2>Ms. Taylor</h2>
+						#
+						<h2>Mr. Rosales</h2>
+						#
+					</div>
+					<div id="Fourth" class="tabcontent">
+						<h2>Ms. King</h2>
+						Math and Spelling
+						<h2>Ms. Jensen</h2>
+						Science and Writing
+						<h2>Ms. Diller</h2>
+						Reading, Social Studies, and Writing
+						<h2>Ms. Stewart</h2>
+						Social Studies and Reading
+						<h2>Mr. Wilson</h2>
+						Math and Science
+					</div>
+					<div id="Fifth" class="tabcontent">
+						<h2>#</h2>
+						#
+						<h2>#</h2>
+						#
+						<h2>#</h2>
+						#
+						<h2>#</h2>
+						#
+						<h2>#</h2>
+						#
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div id="footer">
+		</div>
+	</body>
+</html>

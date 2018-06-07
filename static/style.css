@@ -1,0 +1,226 @@
+* {
+	background-size: auto 100%;
+	font-weight: 400 !important;
+	transition: 0.25s;
+}
+html {
+	box-shadow: inset 0px 50px #147, inset 0px -110px #147;
+	font-size: 1.2em;
+	background-image: url("http://mozorg.cdn.mozilla.net/media/img/sandstone/bg-gradient-sand.png");
+	background-size: auto 100%;
+}
+body > h1, .tab, #tabs, h1::before, h1::after {
+	background-color: #147;
+	color: white;
+}
+.calendar td, body > h1, input, td section, .pro, a[href="#"] {
+	border-radius: 6px;
+}
+.news:first-child, .selected, .pro {
+	background-color: rgb(189, 49, 33);
+}
+body {
+	margin: 0px auto;
+	font-family: "Open Sans", "Calibri", sans-serif;
+	width: 960px;
+	padding: 20px;
+	line-height: 1.5;
+}
+.teachers {
+	padding: 20px 0px 20px 960px;
+	clear: both;
+	margin-top: 1em;
+	background-color: #eee;
+	width: 1980px;
+	margin-left: -960px;
+	border-top: 1px solid silver;
+}
+
+/**********************************************/
+
+h1 {
+	margin: -20px -20px 10px -20px;
+	padding: 5px 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: url("stripes.png");
+	font-size: 200%;
+	position: relative;
+}
+h1::before {
+	left: -10px;
+}
+h1::after {
+	right: -10px;
+}
+h1::before, h1::after {
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 40px;
+	content: "";
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+h2:not(.calendar h2) {
+	border-bottom: 1px solid rgb(189, 49, 33);
+}
+
+/**********************************************/
+
+.news {
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	height: 200px;
+	overflow: hidden;
+}
+.news:hover {
+	height: auto !important;
+}
+.news:first-child {
+	width: 900px;
+}
+.news:nth-child(2), .news:nth-child(3) {
+	width: 420px;
+	background-color: gray;
+}
+.news:nth-child(2) {
+	float: right;
+}
+.news:nth-child(3) {
+	float: left;
+}
+div .news {
+	background-color: gray;
+	height: 20px;
+}
+time {
+	float: right;
+}
+
+/**********************************************/
+
+.selected {
+	margin-left: -20px;
+	z-index: 1000;
+	position: relative;
+}
+#tabs {
+	width: 240px;
+}
+.tabcontent {
+	position: absolute;
+	top: 10px;
+	width: 420px;
+}
+#content {
+	padding: 10px;
+}
+.tab:hover, nav a:hover, .calendar, .tabcontent, #content {
+	background-color: rgb(240, 236, 224);
+	color: black;
+}
+
+/**********************************************/
+
+a[href="#"], input[type="submit"] {
+	padding: 5px 20px;
+	background-color: lightgray;
+	text-decoration: none;
+	color: black;
+	border: 1px solid gray;
+	margin-left: 1em;
+}
+input[type="text"], textarea {
+	box-shadow: inset 2px 2px 4px -2px black;
+}
+input[type="text"] {
+	float: right;
+	clear: both;
+}
+input, textarea {
+	padding: 5px;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+}
+input:focus {
+	border: 3px solid dodgerblue;
+	box-shadow: inset 2px 2px 4px -2px black, 0px 0px 5px dodgerblue;
+	outline: none;
+}
+.formcontain, textarea {
+	width: 275px;
+	margin: 5px;
+}
+
+/**********************************************/
+
+.calendar {
+	width: 840px;
+	margin: 0 auto;
+	border-spacing: 6px;
+}
+.pro td {
+	background-color: #f88;
+	padding: 10px;
+	position: relative;
+}
+.pro section {
+	height: 0px;
+	overflow: hidden;
+	padding: 10px;
+	position: absolute;
+	z-index: 1000;
+	font-size: 0px;
+}
+.pro section:hover {
+	height: auto;
+	background-color: white;
+	font-size: inherit;
+	border: 1px solid gray;
+}
+.pro {
+	border-spacing: 1px;
+}
+.calendar td {
+	height: 100px;
+	background-color: white;
+	width: 120px;
+	text-align: center;
+}
+.control td {
+	height: auto !important;
+}
+table {
+	width: 960px;
+	position: relative;
+}
+
+/**********************************************/
+
+.tab, nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+nav a {
+	margin: 3px 3px 18px 3px;
+}
+table {
+	border-spacing: 0px;
+}
+a, input {
+	display: inline-block;
+}
+nav {
+	background-image: url("nav.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/**********************************************/
+
